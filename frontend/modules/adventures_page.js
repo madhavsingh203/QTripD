@@ -35,21 +35,22 @@ function addAdventureToDOM(adventures) {
   const parentElement = document.getElementById("data");
   adventures.forEach((element) => {
     const divElement = document.createElement("div");
+    divElement.className = "col-6 col-lg-3 mb-4"
     const divContent = `
-<div class="col-6 col-lg-3 mb-4" style="position: relative">
+<div style="position: relative">
 <a href= "/detail/?adventure=${element.id}" id="${element.id}">
 <div class="category-banner">${element.category}</div>
 <div class="activity-card ">
 <img src="${element.image}" alt="${element.name}">
 <div class="">
-<div class=" d-flex  align-items-stretch">
-<h5>${element.name}</h5>
-<h5>${element.costPerHead}${element.currency}</h5>
+<div class=" d-flex justify-content-between ">
+<h6>${element.name}</h6>
+<h6>${element.costPerHead}${element.currency}</h6>
 </div>
-<div class=" d-flex justify-content-between">
+<div class="d-flex justify-content-between">
 
-<h5>Duration</h5>
-<h5>${element.duration}Hours</h5>
+<h6>Duration</h6
+<h6>${element.duration}Hours</h6>
 </div>
 </div>
 
