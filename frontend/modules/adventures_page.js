@@ -43,11 +43,11 @@ function addAdventureToDOM(adventures) {
 <div class="activity-card ">
 <img src="${element.image}" alt="${element.name}">
 <div class="">
-<div class=" d-flex justify-content-between ">
+<div class=" d-flex justify-content-between m-1">
 <h6>${element.name}</h6>
 <h6>${element.costPerHead}${element.currency}</h6>
 </div>
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between m-1">
 
 <h6>Duration</h6
 <h6>${element.duration}Hours</h6>
