@@ -38,7 +38,7 @@ function addAdventureToDOM(adventures) {
     divElement.className = "col-6 col-lg-3 mb-4"
     const divContent = `
 <div style="position: relative">
-<a href= "/detail/?adventure=${element.id}" id="${element.id}">
+<a href= "detail/?adventure=${element.id}" id="${element.id}">
 <div class="category-banner">${element.category}</div>
 <div class="activity-card ">
 <img src="${element.image}" alt="${element.name}">
